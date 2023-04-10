@@ -13,19 +13,21 @@
     <title>Crème Yogurt</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light #bg-light bg-custom-color">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light #bg-light bg-custom-color navbar-nav">
+        <div class="container-fluid d-flex flex-column">
+        <!-- <div class="navbar-header"> -->
+          <a class="navbar-brand" href=index.html>
             <img src="Resources/logo/frozen-yogurt.jpg" alt="" width="50" height="40">
             Crème Yogurt
           </a>
+        <!-- </div> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse d-flex flex-row" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href=index.html>Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href=Pages/whats_new.html>What's New!</a>
@@ -40,9 +42,6 @@
 
                   <li><a class="dropdown-item" href="#">Dairy</a></li>
                   <li><a class="dropdown-item" href="#">Non-Dairy</Non-Dairy></a></li>
-
-                  
-                  
                 </ul>
               </li>
               <li class="nav-item">
@@ -52,10 +51,10 @@
                 <a class="nav-link" href=Pages/contact_us.html>Contact Us</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <!-- <form class="d-flex mx-">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>

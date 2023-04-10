@@ -5,9 +5,20 @@ body {
     background-size: cover;
 }
 
+.navbar-nav {
+    margin: 3;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
 .bg-custom-color {
     background: #dbd2e0;
 }
+
 
 /* ============ desktop view ============ */
 
