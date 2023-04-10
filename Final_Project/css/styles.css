@@ -1,0 +1,21 @@
+body {
+    background-image: url("/Final_Project/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-custom-color {
+    background: #dbd2e0;
+}
+
+/* ============ desktop view ============ */
+
+/* ============ Allow NavBar DropDown menu to work on Hover ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	/* .navbar .nav-item:hover .nav-link{   } */ /* This is temporary and can be removed if it does not affect the feature*/
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* ============ desktop view .end// ============ */
