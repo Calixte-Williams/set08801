@@ -1,3 +1,8 @@
+/* Import Bootstrap*/
+@import "bootstrap";
+
+
+
 body {
     background-image: url("/Final_Project/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
     background-repeat: no-repeat;
@@ -17,12 +22,34 @@ body {
     height: 20em;
 }
 
+.hero_btn {
+    display: flex;
+    align-items: center;
+ 
+    justify-content: center;
+}
+
+.hero_btn .btn-outline-primary{
+    border-color: #de8baa;
+    color: #2D1115;
+    flex-basis: 7%;
+}
+.hero_btn .btn-outline-primary:hover{
+    border-color: #de8baa;
+    background-color: #de8baa;
+}
 h1 {
     color: #2D1115;
     font-family: Gloria Hallelujah;
     text-align: center;
     padding-top: 3.5rem;
 }
+
+/*
+.navbar {
+    background: radial-gradient(#fff,#de8baa)
+}
+*/
 .navbar-nav {
     margin: 3;
 }
@@ -36,6 +63,13 @@ h1 {
 .bg-custom-color {
     background: #dbd2e0;
 }
+
+.whats_new {
+    max-width: 100%;
+    height: 40%;
+    padding: 0 10%;
+}
+
 
 
 /* ============ desktop view ============ */
