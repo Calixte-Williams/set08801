@@ -1,90 +1,99 @@
 body {
-    background-image: url("/Final_Project/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 0 9.9em;
+  background-image: url("/Final_Project/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-position: 0 9.9em; */
 }
 
 @font-face {
-    font-family: 'Gloria Hallelujah';
-    src: url(/Final_Project/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+  font-family: "Gloria Hallelujah";
+  src: url(/Final_Project/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
 }
 
 .footer {
-    background: linear-gradient(#fff0f69e, #fff);
+  background: linear-gradient(#fff0f69e, #fff);
+  position: absolute;
+  bottom: 0;
 }
+
 #hero {
-    /* background: black; */
-    opacity: 100%;
-    height: 20em;
+  /* background: black; */
+  opacity: 100%;
+  height: 20em;
 }
 
 .hero_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero_btn .btn-outline-primary{
-    border-color: #de8baa;
-    color: #2D1115;
-    width: 6em;
+.hero_btn .btn-outline-primary {
+  border-color: #de8baa;
+  color: #2d1115;
+  width: 6em;
+  transition: background 0.5s;
 }
-.hero_btn .btn-outline-primary:hover{
-    border-color: #de8baa;
-    background-color: #de8baa;
+.hero_btn .btn-outline-primary:hover {
+  border-color: #de8baa;
+  background-color: #de8baa;
 }
 h1 {
-    color: #2D1115;
-    font-family: Gloria Hallelujah;
-    text-align: center;
-    padding-top: 3.5rem;
+  color: #2d1115;
+  font-family: Gloria Hallelujah;
+  text-align: center;
+  padding-top: 3.5rem;
 }
 
 .imgCarouselWhatsNew {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #logoHeader {
-    font-family: Gloria Hallelujah;
+  font-family: Gloria Hallelujah;
 }
 
 .navbar {
-    background: linear-gradient(#fff,#fff0f69e);
+  background: linear-gradient(#fff, #fff0f69e);
 }
 
-.navbar-nav {
-    margin: 3;
+/* .navbar-nav {
+     margin: 3; 
 }
+*/
 
 .navbar-header {
-    float: left;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
 }
 .bg-custom-color {
-    background: #dbd2e0;
+  background: #dbd2e0;
 }
 
 .whats_new {
-    max-width: 100%;
-    height: 40%;
-    padding: 0 10%;
+  max-width: 100%;
+  height: 40%;
+  padding: 0 10%;
 }
-
-
 
 /* ============ desktop view ============ */
 
 /* ============ Allow NavBar DropDown menu to work on Hover ============ */
 
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	/* .navbar .nav-item:hover .nav-link{   } */ /* This is temporary and can be removed if it does not affect the feature*/
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  /* .navbar .nav-item:hover .nav-link{   } */ /* This is temporary and can be removed if it does not affect the feature*/
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
 }
 /* ============ desktop view .end// ============ */
