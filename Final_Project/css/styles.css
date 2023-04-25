@@ -1,8 +1,3 @@
-/* Import Bootstrap*/
-@import "bootstrap";
-
-
-
 body {
     background-image: url("/Final_Project/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
     background-repeat: no-repeat;
@@ -15,7 +10,6 @@ body {
     font-family: 'Gloria Hallelujah';
     src: url(/Final_Project/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
 }
-
 
 .footer {
     background: linear-gradient(#fff0f69e, #fff);
@@ -48,13 +42,17 @@ h1 {
     padding-top: 3.5rem;
 }
 
+.imgCarouselWhatsNew {
+    height: 100%;
+    width: 100%;
+}
+
 #logoHeader {
     font-family: Gloria Hallelujah;
 }
 
 .navbar {
     background: linear-gradient(#fff,#fff0f69e);
-    /*height: 230px; */
 }
 
 .navbar-nav {
