@@ -35,6 +35,7 @@ body {
   width: 6em;
   transition: background 0.5s;
 }
+
 .hero_btn .btn-outline-primary:hover {
   border-color: #de8baa;
   background-color: #de8baa;
