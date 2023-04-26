@@ -11,6 +11,18 @@ body {
   src: url(/Final_Project/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
 }
 
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .footer {
   background: linear-gradient(#fff0f69e, #fff);
   position: absolute;
@@ -73,6 +85,16 @@ h1 {
 }
 .bg-custom-color {
   background: #dbd2e0;
+}
+
+.yogurt {
+  background-color: blue;
+}
+
+.yogurt.active {
+  background-color: red;
+  transform: scale(3);
+  transform-origin: left;
 }
 
 .whats_new {
