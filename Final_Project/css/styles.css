@@ -5,6 +5,9 @@ body {
   background-size: cover;
   /* background-position: 0 9.9em; */
 }
+.card {
+  max-width: 540px;
+}
 
 @font-face {
   font-family: "Gloria Hallelujah";
@@ -86,12 +89,11 @@ h1 {
   background: #dbd2e0;
 }
 
-.yogurt {
-  background-color: blue;
+.card {
+  margin: 4%;
 }
 
-.yogurt.active {
-  background-color: red;
+.expand.active {
   transform: scale(3);
   transform-origin: left;
 }

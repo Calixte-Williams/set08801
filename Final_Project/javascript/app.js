@@ -1,22 +1,7 @@
-// Selecting all sections with class of section
-const yogurts = document.querySelectorAll(".yogurt");
-
-// On click event for each section
-yogurts.forEach((yogurt) => {
-  yogurt.addEventListener("mouseover", () => {
-    // and add it to the selected section
-    yogurt.classList.add("active");
-  });
-  yogurt.addEventListener("mouseout", () => {
-    // and add it to the selected section
-    yogurt.classList.remove("active");
-  });
-});
-
 //Import Dairy Yogurt Data
 //Declaring Variables
 
-const cardData = [
+var tasks = [
   {
     heading: "card 1",
     body: "description",
@@ -88,12 +73,12 @@ postMethods();
 
 let cardContainer;
 
-let createCards = (create) => {
+const createTaskCard = (task) => {
   let container = document.createElement("div");
   container.className = "yogurt col-md-auto";
 
   let card = document.createElement("div");
-  card.className = "card mb-3";
+  card.className = "card mb-3 expand";
 
   let internalContainer = document.createElement("div");
   internalContainer.className = "row g-0";
@@ -103,7 +88,7 @@ let createCards = (create) => {
 
   let image = document.createElement("img");
   image.className = "img-fluid rounded-start";
-  image.src = create.image;
+  image.src = task.image;
 
   let cardBodyContainer = document.createElement("div");
   cardBodyContainer.className = "col-md-8";
@@ -112,11 +97,11 @@ let createCards = (create) => {
   cardBody.className = "card-body";
 
   let title = document.createElement("h5");
-  title.innerText = create.heading;
-  title.className = "card-title";
+  title.innerText = task.heading;
+  title.className = "card-title expand";
 
   let description = document.createElement("p");
-  description.innerText = create.description;
+  description.innerText = task.body;
   description.className = "card-text";
 
   cardBody.appendChild(title);
@@ -127,18 +112,35 @@ let createCards = (create) => {
   internalContainer.appendChild(cardBodyContainer);
   card.appendChild(internalContainer);
   container.appendChild(card);
+  cardContainer.appendChild(container);
 };
 
-const startCreation = () => {
+const initListOfTasks = () => {
   if (cardContainer) {
     document.getElementById("card-container").replaceWith(cardContainer);
     return;
   }
 
   cardContainer = document.getElementById("card-container");
-  cardData.forEach((create) => {
-    createCards(create);
+  tasks.forEach((task) => {
+    createTaskCard(task);
   });
 };
 
-startCreation();
+initListOfTasks();
+
+/*-----------------------------------------------------------------------------*/
+// Selecting all sections with class of section
+const expands = document.querySelectorAll(".expand");
+
+// On click event for each section
+expands.forEach((expand) => {
+  expand.addEventListener("mouseover", () => {
+    // and add it to the selected section
+    expand.classList.add("active");
+  });
+  expand.addEventListener("mouseout", () => {
+    // and add it to the selected section
+    expand.classList.remove("active");
+  });
+});
