@@ -5,8 +5,10 @@ body {
   background-size: cover;
   /* background-position: 0 9.9em; */
 }
+
 .card {
   max-width: 540px;
+  margin: 4%;
 }
 
 @font-face {
@@ -61,6 +63,11 @@ h1 {
   padding-top: 3.5rem;
 }
 
+.hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .imgCarouselWhatsNew {
   height: 100%;
   width: 100%;
@@ -74,28 +81,27 @@ h1 {
   background: linear-gradient(#fff, #fff0f69e);
 }
 
-/* .navbar-nav {
-     margin: 3; 
-}
-*/
-
 .navbar-header {
   float: left;
   padding: 15px;
   text-align: center;
   width: 100%;
 }
+
+.newdiv {
+  background-color: red;
+}
 .bg-custom-color {
   background: #dbd2e0;
 }
 
-.card {
-  margin: 4%;
-}
-
 .expand.active {
-  transform: scale(3);
+  transform: scale(2);
   transform-origin: left;
+
+  left: 20%;
+  right: 20%;
+  z-index: 100; /*Bring Card to Foreground*/
 }
 
 .whats_new {
