@@ -16,7 +16,7 @@ var dairyData = [
   {
     //https://www.bbcgoodfood.com/recipes/lemon-curd-yogurt-fool
     heading: "Lemon Curd & Yogurt Fool",
-    body: "Treat yourself to a delightfully easy family dessert - ready in just five minutes",
+    body: "Treat yourself to a delightfully easy family dessert, ready in just five minutes",
     image: "/Final_Project/Resources/yogurts/LemonCurd.jpg",
     hIngredients: "Ingredients:",
     ingredients:
@@ -29,7 +29,7 @@ var dairyData = [
     //https://www.bbcgoodfood.com/recipes/instant-frozen-berry-yogurt
     heading: "Frozen Berry Yogurt",
     body: "Try these tasty breakfast pots with fruit, bio yogurt and oats for a fuss-free start to the morning. They provide calcium, vitamin C and one of your 5-a-day",
-    image: "/Final_Project/Resources/yogurts/PeachOrange.jpg",
+    image: "/Final_Project/Resources/yogurts/BerryYogurt.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "250g frozen mixed berry, 250g 0%-fat Greek yogurt, 1 tbsp honey or agave syrup",
@@ -41,7 +41,7 @@ var dairyData = [
     //https://www.bbcgoodfood.com/recipes/peach-orange-yogurt-pots-ginger-oats
     heading: "Peach & Orange Yogurt Pots with Ginger Oats",
     body: "Three ingredients and two minutes is all you need to whip up this low-fat, low-calorie frozen yogurt treat, which is ideal for eating after exercise or as a quick dessert",
-    image: "/Final_Project/Resources/yogurts/BerryYogurt.jpg",
+    image: "/Final_Project/Resources/yogurts/PeachOrange.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "4 peaches or nectarines, stoned and diced, 1 orange, juiced and zested, 120g porridge oats, 25g pine SVGAnimatedNumberList, ½ tsp ground ginger, 1 tsp ground cinnamon, 2 tbsp sultanas, 4 x 150ml pots bio yogurt",
@@ -51,8 +51,8 @@ var dairyData = [
   },
   {
     //https://www.bbcgoodfood.com/recipes/frozen-tropical-fruit-yogurt
-    heading: "Frozen tropical fruit yogurt",
-    body: "Try this genius recipe – as if by magic, the frozen tropical fruit freezes the yogurt when blended together. Use a food processor rather than a blender",
+    heading: "Frozen Tropical Fruit Yogurt",
+    body: "Try this genius recipe, as if by magic, the frozen tropical fruit freezes the yogurt when blended together. Use a food processor rather than a blender",
     image: "/Final_Project/Resources/yogurts/TropicalFruit.jpg",
     hIngredients: "Ingredients:",
     ingredients:
@@ -127,22 +127,22 @@ const createTaskDairyCard = (create) => {
 
   let hIngredients = document.createElement("h6");
   hIngredients.innerText = create.hIngredients;
-  hIngredients.className = "card-text hidden";
+  hIngredients.className = "card-text #hidden";
   hIngredients.setAttribute("id", "unHideHIngr");
 
   let ingredients = document.createElement("p");
   ingredients.innerText = create.ingredients;
-  ingredients.className = "card-text hidden";
+  ingredients.className = "card-text #hidden";
   ingredients.setAttribute("id", "unHideIngr");
 
   let hInstructions = document.createElement("h6");
   hInstructions.innerText = create.hInstructions;
-  hInstructions.className = "card-text hidden";
+  hInstructions.className = "card-text #hidden";
   hInstructions.setAttribute("id", "unHideHInstr");
 
   let instructions = document.createElement("p");
   instructions.innerText = create.instructions;
-  instructions.className = "card-text hidden";
+  instructions.className = "card-text #hidden";
   instructions.setAttribute("id", "unHideInstr");
 
   cardBody.appendChild(title);
@@ -190,24 +190,25 @@ const createTaskCardNonDairy = (create) => {
   let description = document.createElement("p");
   description.innerText = create.body;
   description.className = "card-text";
+
   let hIngredients = document.createElement("h6");
   hIngredients.innerText = create.hIngredients;
-  hIngredients.className = "card-text hidden";
+  hIngredients.className = "card-text #hidden";
   hIngredients.setAttribute("id", "unHideHIngr");
 
   let ingredients = document.createElement("p");
   ingredients.innerText = create.ingredients;
-  ingredients.className = "card-text hidden";
+  ingredients.className = "card-text #hidden";
   ingredients.setAttribute("id", "unHideIngr");
 
   let hInstructions = document.createElement("h6");
   hInstructions.innerText = create.hInstructions;
-  hInstructions.className = "card-text hidden";
+  hInstructions.className = "card-text #hidden";
   hInstructions.setAttribute("id", "unHideHInstr");
 
   let instructions = document.createElement("p");
   instructions.innerText = create.instructions;
-  instructions.className = "card-text hidden";
+  instructions.className = "card-text #hidden";
   instructions.setAttribute("id", "unHideInstr");
 
   cardBody.appendChild(title);
@@ -274,18 +275,18 @@ expands.forEach((expand) => {
   expand.addEventListener("mouseover", () => {
     // add it to the selected section
     expand.classList.add("active");
-    cardBodyInstr.classList.remove("hidden");
-    cardBodyHInstr.classList.remove("hidden");
-    cardBodyIngr.classList.remove("hidden");
-    cardBodyHIngr.classList.remove("hidden");
+    //cardBodyInstr.classList.remove("hidden");
+    //cardBodyHInstr.classList.remove("hidden");
+    //cardBodyIngr.classList.remove("hidden");
+    //cardBodyHIngr.classList.remove("hidden");
   });
   expand.addEventListener("mouseout", () => {
     // add it to the selected section
     expand.classList.remove("active");
-    cardBodyInstr.classList.add("hidden");
-    cardBodyHInstr.classList.add("hidden");
-    cardBodyIngr.classList.add("hidden");
-    cardBodyHIngr.classList.add("hidden");
+    //cardBodyInstr.classList.add("hidden");
+    //cardBodyHInstr.classList.add("hidden");
+    //cardBodyIngr.classList.add("hidden");
+    //cardBodyHIngr.classList.add("hidden");
   });
 });
 

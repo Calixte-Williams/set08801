@@ -11,6 +11,13 @@ body {
   margin: 4%;
 }
 
+.carousel-caption a {
+  color: white;
+}
+.carousel-caption a:hover {
+  color: #de8baa;
+}
+
 @font-face {
   font-family: "Gloria Hallelujah";
   src: url(/Final_Project/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
@@ -34,7 +41,6 @@ body {
 }
 
 #hero {
-  /* background: black; */
   opacity: 100%;
   height: 20em;
 }
@@ -55,6 +61,7 @@ body {
 .hero_btn .btn-outline-primary:hover {
   border-color: #de8baa;
   background-color: #de8baa;
+  color: white;
 }
 h1 {
   color: #2d1115;
@@ -64,13 +71,12 @@ h1 {
 }
 
 .hidden {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  display: none;
 }
+
 .imgCarouselWhatsNew {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
 #logoHeader {
@@ -95,19 +101,39 @@ h1 {
   background: #dbd2e0;
 }
 
+.expand {
+  transition: 1s ease-out;
+}
 .expand.active {
-  transform: scale(2);
+  transform: scale(1.5);
   transform-origin: left;
-
   left: 20%;
   right: 20%;
   z-index: 100; /*Bring Card to Foreground*/
 }
 
+.sectionContainers {
+  padding: 5% 15%;
+  border-radius: 40%;
+  background-color: rgba(255, 255, 255, 0.557);
+}
+.sectionContainers h5 {
+  font-family: Gloria Hallelujah;
+}
+.sectionContainers a {
+  color: #985f99;
+}
+.sectionContainers a:hover {
+  color: #de8baa;
+}
+.sectionContainers img {
+  padding-bottom: 3%;
+}
+
 .whats_new {
-  max-width: 100%;
-  height: 40%;
-  padding: 0 10%;
+  width: 80%;
+  height: auto;
+  padding-left: 20%;
 }
 
 /* ============ desktop view ============ */
