@@ -5,15 +5,29 @@ body {
   background-size: cover;
   /* background-position: 0 9.9em; */
 }
+.card {
+  max-width: 540px;
+}
 
 @font-face {
   font-family: "Gloria Hallelujah";
   src: url(/Final_Project/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
 }
 
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .footer {
   background: linear-gradient(#fff0f69e, #fff);
-  position: absolute;
   bottom: 0;
 }
 
@@ -73,6 +87,15 @@ h1 {
 }
 .bg-custom-color {
   background: #dbd2e0;
+}
+
+.card {
+  margin: 4%;
+}
+
+.expand.active {
+  transform: scale(3);
+  transform-origin: left;
 }
 
 .whats_new {
