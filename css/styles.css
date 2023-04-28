@@ -4,6 +4,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   /* background-position: 0 9.9em; */
+  display: flex;
+  flex-direction: column;
 }
 .about-us {
   width: 100%;
@@ -96,7 +98,7 @@ body {
 }
 /* Fix Position of Footer on Certain Pages */
 #footerPosition {
-  position: fixed;
+  /*position: absolute; */
 }
 
 #hero {
