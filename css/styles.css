@@ -5,7 +5,42 @@ body {
   background-size: cover;
   /* background-position: 0 9.9em; */
 }
-
+.about-us {
+  width: 100%;
+  padding: 90px 0;
+}
+.about img {
+  height: auto;
+  width: 302px;
+}
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30%;
+  background-color: rgba(255, 255, 255, 0.557);
+}
+.aboutText {
+  width: 540px;
+}
+.aboutText h2 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.aboutText h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.aboutText p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
 .card {
   max-width: 540px;
   margin: 4%;
@@ -39,7 +74,9 @@ body {
   background: linear-gradient(#fff0f69e, #fff);
   bottom: 0;
 }
-
+#footerPosition {
+  position: fixed;
+}
 #hero {
   opacity: 100%;
   height: 20em;
@@ -79,6 +116,10 @@ h1 {
   width: auto;
 }
 
+#logoPosition {
+  position: relative;
+  left: 50%;
+}
 #logoHeader {
   font-family: Gloria Hallelujah;
 }
