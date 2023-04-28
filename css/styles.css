@@ -94,10 +94,11 @@ body {
   background: linear-gradient(#fff0f69e, #fff);
   bottom: 0;
 }
-/* Fix Position of Footer on Certain Pages */
+/* Fix Position of Footer on Certain Pages 
 #footerPosition {
   position: absolute;
 }
+*/
 
 #hero {
   opacity: 100%;
