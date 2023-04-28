@@ -82,6 +82,10 @@ body {
   height: 20em;
 }
 
+#hero h1 {
+  text-shadow: 1px 1px #ff1493;
+}
+
 .hero_btn {
   display: flex;
   align-items: center;
@@ -105,6 +109,7 @@ h1 {
   font-family: Gloria Hallelujah;
   text-align: center;
   padding-top: 3.5rem;
+  text-shadow: 1px 1px #ff1493;
 }
 
 .hidden {
