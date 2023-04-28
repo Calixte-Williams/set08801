@@ -4,8 +4,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   /* background-position: 0 9.9em; */
-  display: relative;
-  /*flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 }
 .about-us {
   width: 100%;
