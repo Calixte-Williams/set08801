@@ -5,7 +5,7 @@ var dairyData = [
   {
     heading: "Berry Bircher",
     body: "Overnight oats that are low in fat and take 5 minutes to prepare. Pack your breakfast with frozen raspberries, bio yogurt and golden linseeds for a delicious and healthy start to the day",
-    image: "/Resources/yogurts/berry-bircher.jpg",
+    image: "/set08801/Resources/yogurts/berry-bircher.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "70g porridge oats, 2 tbsp golden linseeds, 2 ripe bananas, 140g frozen raspberries, 175g natural bio yogurt",
@@ -17,7 +17,7 @@ var dairyData = [
     //https://www.bbcgoodfood.com/recipes/lemon-curd-yogurt-fool
     heading: "Lemon Curd & Yogurt Fool",
     body: "Treat yourself to a delightfully easy family dessert, ready in just five minutes",
-    image: "/Resources/yogurts/LemonCurd.jpg",
+    image: "/set08801/Resources/yogurts/LemonCurd.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "300g jar lemon curd (we used Duchy Originals Traditional Lemon Curd), 500g tub 0% Greek yogurt, 200g punnet raspberry, 1 tbsp icing sugar, shortbread, to serve",
@@ -29,7 +29,7 @@ var dairyData = [
     //https://www.bbcgoodfood.com/recipes/instant-frozen-berry-yogurt
     heading: "Frozen Berry Yogurt",
     body: "Try these tasty breakfast pots with fruit, bio yogurt and oats for a fuss-free start to the morning. They provide calcium, vitamin C and one of your 5-a-day",
-    image: "/Resources/yogurts/BerryYogurt.jpg",
+    image: "/set08801/Resources/yogurts/BerryYogurt.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "250g frozen mixed berry, 250g 0%-fat Greek yogurt, 1 tbsp honey or agave syrup",
@@ -41,7 +41,7 @@ var dairyData = [
     //https://www.bbcgoodfood.com/recipes/peach-orange-yogurt-pots-ginger-oats
     heading: "Peach & Orange Yogurt Pots with Ginger Oats",
     body: "Three ingredients and two minutes is all you need to whip up this low-fat, low-calorie frozen yogurt treat, which is ideal for eating after exercise or as a quick dessert",
-    image: "/Resources/yogurts/PeachOrange.jpg",
+    image: "/set08801/Resources/yogurts/PeachOrange.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "4 peaches or nectarines, stoned and diced, 1 orange, juiced and zested, 120g porridge oats, 25g pine SVGAnimatedNumberList, ½ tsp ground ginger, 1 tsp ground cinnamon, 2 tbsp sultanas, 4 x 150ml pots bio yogurt",
@@ -53,7 +53,7 @@ var dairyData = [
     //https://www.bbcgoodfood.com/recipes/frozen-tropical-fruit-yogurt
     heading: "Frozen Tropical Fruit Yogurt",
     body: "Try this genius recipe, as if by magic, the frozen tropical fruit freezes the yogurt when blended together. Use a food processor rather than a blender",
-    image: "/Resources/yogurts/TropicalFruit.jpg",
+    image: "/set08801/Resources/yogurts/TropicalFruit.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "480g frozen tropical fruit mix, 170g Greek yogurt, 2 tbsp maple syrup or honey, 200g diced tropical fruit and passion fruit seeds, to serve",
@@ -68,7 +68,7 @@ var nonDairyData = [
     //https://pinchofyum.com/5-minute-vegan-yogurt
     heading: "Cashew Yogurt",
     body: "This Creamy Dreamy Vegan “Yogurt” is the BEST! Made in just five minutes with three ingredients and naturally sweetened.",
-    image: "/Resources/yogurts/CashewNut.jpeg",
+    image: "/set08801/Resources/yogurts/CashewNut.jpeg",
     hIngredients: "Ingredients:",
     ingredients:
       "2 cups Frozen Peaches, 1/2 cup Cashews, 12 Ounces Tofu, 1/4 cup liquid sweetener – agave, maple syrup, or honey  (more or less to taste), 1 tablespoon lemon juice (more or less to taste)",
@@ -80,7 +80,7 @@ var nonDairyData = [
     //https://www.bbcgoodfood.com/recipes/instant-frozen-berry-yogurt
     heading: "Frozen Berry Yogurt",
     body: "Three ingredients and two minutes is all you need to whip up this low-fat, low-calorie frozen yogurt treat, which is ideal for eating after exercise or as a quick dessert",
-    image: "/Resources/yogurts/BerryYogurt.jpg",
+    image: "/set08801/Resources/yogurts/BerryYogurt.jpg",
     hIngredients: "Ingredients:",
     ingredients:
       "250g frozen mixed berry, 250g 0%-fat Greek yogurt, 1 tbsp honey or agave syrup",

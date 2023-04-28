@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
+  background-image: url("/set08801/Resources/backgrounds/vicky-ng-yIh0i6TYGrs-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -55,7 +55,7 @@ body {
 
 @font-face {
   font-family: "Gloria Hallelujah";
-  src: url(/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+  src: url(/set08801/Font-Family/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
 }
 
 .form-control-borderless {
