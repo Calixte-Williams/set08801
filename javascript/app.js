@@ -1,8 +1,9 @@
-//Import Dairy Yogurt Data
 //Declaring Variables
-
+//Dairy Yogurt Data
 var dairyData = [
   {
+    //https://www.bbcgoodfood.com/recipes/berry-bircher
+    //Data for Recipes Pulled from the Site Above
     heading: "Berry Bircher",
     body: "Overnight oats that are low in fat and take 5 minutes to prepare. Pack your breakfast with frozen raspberries, bio yogurt and golden linseeds for a delicious and healthy start to the day",
     image: "/set08801/Resources/yogurts/berry-bircher.jpg",
@@ -15,6 +16,7 @@ var dairyData = [
   },
   {
     //https://www.bbcgoodfood.com/recipes/lemon-curd-yogurt-fool
+    //Data for Recipes Pulled from the Site Above
     heading: "Lemon Curd & Yogurt Fool",
     body: "Treat yourself to a delightfully easy family dessert, ready in just five minutes",
     image: "/set08801/Resources/yogurts/LemonCurd.jpg",
@@ -27,6 +29,7 @@ var dairyData = [
   },
   {
     //https://www.bbcgoodfood.com/recipes/instant-frozen-berry-yogurt
+    //Data for Recipes Pulled from the Site Above
     heading: "Frozen Berry Yogurt",
     body: "Try these tasty breakfast pots with fruit, bio yogurt and oats for a fuss-free start to the morning. They provide calcium, vitamin C and one of your 5-a-day",
     image: "/set08801/Resources/yogurts/BerryYogurt.jpg",
@@ -63,9 +66,11 @@ var dairyData = [
   },
 ];
 
+// Non-Dairy Yogurt Data
 var nonDairyData = [
   {
     //https://pinchofyum.com/5-minute-vegan-yogurt
+    //Data for Recipes Pulled from the Site Above
     heading: "Cashew Yogurt",
     body: "This Creamy Dreamy Vegan “Yogurt” is the BEST! Made in just five minutes with three ingredients and naturally sweetened.",
     image: "/set08801/Resources/yogurts/CashewNut.jpeg",
@@ -78,8 +83,9 @@ var nonDairyData = [
   },
   {
     //https://www.bbcgoodfood.com/recipes/instant-frozen-berry-yogurt
+    //Data for Recipes Pulled from the Site Above
     heading: "Frozen Berry Yogurt",
-    body: "Three ingredients and two minutes is all you need to whip up this low-fat, low-calorie frozen yogurt treat, which is ideal for eating after exercise or as a quick dessert",
+    body: "Three ingredients and two minutes is all that is needed to whip up this low-fat, low-calorie frozen yogurt treat, which is ideal for eating after exercise or as a quick dessert.",
     image: "/set08801/Resources/yogurts/BerryYogurt.jpg",
     hIngredients: "Ingredients:",
     ingredients:
@@ -93,6 +99,7 @@ var nonDairyData = [
 let cardContainerDairy;
 let cardContainerNonDairy;
 
+//Define Object for Creating Elements
 const createTaskDairyCard = (create) => {
   let container = document.createElement("div");
   container.className = "yogurt col-md-auto";
@@ -160,6 +167,7 @@ const createTaskDairyCard = (create) => {
   cardContainerDairy.appendChild(container);
 };
 
+//Define Object for Creating Elements
 const createTaskCardNonDairy = (create) => {
   let container = document.createElement("div");
   container.className = "yogurt col-md-auto";
@@ -226,6 +234,7 @@ const createTaskCardNonDairy = (create) => {
   cardContainerNonDairy.appendChild(container);
 };
 
+//Create function that uses Data from Arrays and Relevant Object
 const createDairy = () => {
   if (cardContainerDairy) {
     document
@@ -240,6 +249,7 @@ const createDairy = () => {
   });
 };
 
+//Create function that uses Data from Arrays and Relevant Object
 const createNonDairy = () => {
   if (cardContainerNonDairy) {
     document
@@ -254,35 +264,39 @@ const createNonDairy = () => {
   });
 };
 
+//Call Functions
 createDairy();
 createNonDairy();
 
 /*-----------------------------------------------------------------------------*/
 // Selecting all sections with class of section
 const expands = document.querySelectorAll(".expand");
-const cbody = document.getElementById("unHide");
-const dbody = document.getElementById(".active");
-const bbody = document.getElementsByClassName("active");
+
+//Disabled Code for Revealing Data on Yogurt Cards
+/*
 const cardBodyIngr = document.getElementById("unHideIngr");
 const cardBodyInstr = document.getElementById("unHideInstr");
 const cardBodyHInstr = document.getElementById("unHideHInstr");
 const cardBodyHIngr = document.getElementById("unHideHIngr");
 
 var tabLink = document.querySelectorAll(".card-text");
+*/
 
 // On click event for each section
 expands.forEach((expand) => {
   expand.addEventListener("mouseover", () => {
-    // add it to the selected section
+    // Add active class to the selected
     expand.classList.add("active");
+
     //cardBodyInstr.classList.remove("hidden");
     //cardBodyHInstr.classList.remove("hidden");
     //cardBodyIngr.classList.remove("hidden");
     //cardBodyHIngr.classList.remove("hidden");
   });
   expand.addEventListener("mouseout", () => {
-    // add it to the selected section
+    // Remove active class to the selected
     expand.classList.remove("active");
+
     //cardBodyInstr.classList.add("hidden");
     //cardBodyHInstr.classList.add("hidden");
     //cardBodyIngr.classList.add("hidden");
@@ -290,6 +304,7 @@ expands.forEach((expand) => {
   });
 });
 
+//Disabled Testing Code
 /*
 var tabLink = document.querySelectorAll(".card-text");
 
